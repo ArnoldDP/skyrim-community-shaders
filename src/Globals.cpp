@@ -7,6 +7,7 @@
 #include "Features/ExponentialHeightFog.h"
 #include "Features/ExtendedMaterials.h"
 #include "Features/ExtendedTranslucency.h"
+#include "Features/FluidSimulation.h"
 #include "Features/GrassCollision.h"
 #include "Features/GrassLighting.h"
 #include "Features/GrassOptimizations.h"
@@ -87,6 +88,7 @@ namespace globals
 		PerformanceOverlay performanceOverlay{};
 		WetnessEffects wetnessEffects{};
 		ExtendedTranslucency extendedTranslucency{};
+		FluidSimulation fluidSimulation{};
 		Upscaling upscaling{};
 		HDRDisplay hdrDisplay{};
 		Effects11 effects11{};

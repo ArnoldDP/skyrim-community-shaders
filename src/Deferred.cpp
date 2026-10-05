@@ -8,6 +8,7 @@
 
 #include "Features/DynamicCubemaps.h"
 #include "Features/Effects11.h"
+#include "Features/FluidSimulation.h"
 #include "Features/IBL.h"
 #include "Features/ScreenSpaceGI.h"
 #include "Features/Skylighting.h"
@@ -414,6 +415,9 @@ void Deferred::DeferredPasses()
 
 	if (globals::features::effects11.loaded)
 		globals::features::effects11.DrawVolumetricRays();
+
+	if (globals::features::fluidSimulation.loaded)
+		globals::features::fluidSimulation.SimulateAndDraw();
 }
 
 void Deferred::EndDeferred()
